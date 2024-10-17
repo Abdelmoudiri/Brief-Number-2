@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.mainAbout {
+    background-image: url("./img/Rect.png"), url("./img/Rectangle10.png");
+    background-blend-mode: soft-light;
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(5, 20%);
+    width: 100%;
+    height: 90vh;
+    z-index: -1;
+    border: 2px solid red; 
+}
+
+.mainAboutDiv1 {
+    background-size: cover;
+
+    width: 100%;
+    height: 90vh;
+    grid-column: 1/3;
+    align-items: center;
+}
+
+.mainAboutDiv2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90vh;
+    grid-column: 4/6;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    align-items: center;
+}
+
+.mainAbout2{
+    margin-inline: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);   
+}
+.mainAbout11{
+    height: 100%;
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: rgb(0, 255, 13);
+}
+.mainAbout12{
+    height: 100%;
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: rgb(97, 32, 63);
+}
+.mainAbout12{
+    height: 100%;
+    width: 100%;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color: rgb(104, 118, 105);
+}
+.mainAbout13{
+    height: 100%;
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: rgb(100, 172, 29);
+}
+.mainAbout14{
+    height: 100%;
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: rgb(6, 16, 7);
+}
+.mainAbout15{
+    height: 100%;
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: rgb(65, 12, 103);
+}
+.mainAbout16{
+    height: 100%;
+    width: 100%;
+    grid-column: 3/4;
+    grid-row: 2/2;
+    background-color: rgb(255, 157, 0);
+}

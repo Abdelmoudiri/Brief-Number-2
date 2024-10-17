@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+.navbar a{
+    color: black;
+}
+.mainAbout {
+    background-image: url("./img/abouteBg.jpg");
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(5, 20%);
+    width: 100%;
+    height: 90vh;
+    /* z-index: -1; */
+    border: 2px solid red; 
+}
