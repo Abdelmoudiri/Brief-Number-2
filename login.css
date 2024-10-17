@@ -29,7 +29,7 @@ body {
     object-fit: fill;
     display: flex;
     align-items: center;
-    background-color: #F4F9FF;
+    background-color: #fff;
     position: relative;
 }
 .loginImage img{
