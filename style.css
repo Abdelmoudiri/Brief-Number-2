@@ -188,9 +188,6 @@ searchboxSelect label{
     height: 300px;
     width: 100%;
     margin-top: 10px;
-    border: 7px solid #2f6524;
-    /* position: absolute; */
-    /* bottom: 70%; */
     z-index: auto;
     align-items: center;
 }
@@ -213,7 +210,6 @@ searchboxSelect label{
     padding-right: 20px;
     width: 70%;
     margin-inline: auto;
-    background-color: #af21cc;
     grid-template-columns: repeat(3,33%);
     grid-template-rows: repeat(2,50%);
 }
@@ -226,43 +222,74 @@ height: 100%;
 width: 100%;
 grid-column: 1/2;
 grid-row: 1/2;
-background-color: #2f6524;
+}
+.div1 img{
+    height: 50%;
+    width: 100%;
+    border-radius: 15px;
+}.div2 img{
+    height: 50%;
+    width: 100%;
+    border-radius: 15px;
+}.div3 img{
+    height: 50%;
+    width: 100%;
+    border-radius: 15px;
+}.div4 img{
+    height: 50%;
+    width: 100%;
+    border-radius: 15px;
+}.div5 img{
+    height: 50%;
+    width: 100%;
+    border-radius: 15px;
+}.div6 img{
+    height: 50%;
+    width: 100%;
+    border-radius: 15px;
 }
 .div2{
 height: 100%;
 width: 100%;
 grid-column: 2/3;
 grid-row: 1/2;
-background-color: #000;
 }
 .div3{
 height: 100%;
 width: 100%;
 grid-column: 3/4;
 grid-row: 1/2;
-background-color: #fff;
 }
 .div4{
 height: 100%;
 width: 100%;
 grid-column: 1/2;
 grid-row: 2/3;
-background-color: #c0a4a4;
 }
 .div5{
 height: 100%;
 width: 100%;
 grid-column: 2/3;
 grid-row: 2/3;
-background-color: #ce2525;
 }
 .div6{
 height: 100%;
 width: 100%;
 grid-column: 3/4;
 grid-row: 2/3;
-background-color: #0ecb76;
 }
+.dateBox{
+    display: flex;
+}
+.d1{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-top: 20px;
+    width: 80px;
+}
+
+
 
 .loadmore{
     width: 100%;
@@ -274,7 +301,7 @@ background-color: #0ecb76;
 .joinBrands{
     width: 100%;
     height: 100px;
-background-color: #EEE1FF;
+    background-color: #EEE1FF;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -311,20 +338,27 @@ background-color: #EEE1FF;
     height: 200px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    background-color: #242565;
     margin-inline: auto;
+    margin-bottom: 100px;
 }
 .blog1{
     grid-column: 1/2;
-    background-color: #161fc8;
-
+    padding-right: 15px;
+}
+.blog1 img{
+    border-radius: 15px;
+}
+.blog2 img{
+    border-radius: 15px;
+}
+.blog3 img{
+    border-radius: 15px;
 }
 .blog2{
-    background-color: #896868;
     grid-column: 2/3;
+    padding-right: 15px;
 }
 .blog3{
-    background-color: #000;
     grid-column: 3/4;
 }
 .foter{
@@ -337,11 +371,15 @@ background-color: #EEE1FF;
     margin-inline: auto;
 }
 .foterdiv1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    object-fit: contain;
 grid-column: 1/4;
 background-color: #291f91;
 width: 100%;
 height: 300px;
-padding: 20%;
 }
  #footer-logo{
     width: 100px;
@@ -366,7 +404,6 @@ padding: 20%;
     background-color: #291f91;
     width: 100%;
     padding: 20%;
-
     height: 300px;
 }
 .foterdiv3 a{
@@ -382,15 +419,24 @@ padding: 20%;
 }
 .emailSubscribe{
     border-radius: 20px;
-    position: relative;
-    height: 50px;
-    width: 90%;
+display: flex; 
+   height: 50px;
+    width: 100%;
+    
     background-color: #FFF;
     align-items: center;
+    justify-content: center;
 }
 .emailSubscribe input[type=button]{
 background-color: #F5167E;
 border-radius: 30%;
-width: 70px;
+width: 100px;
+border: none;
 height: 40px;
+}
+.emailSubscribe input[type=text]{
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 60%;
 }
