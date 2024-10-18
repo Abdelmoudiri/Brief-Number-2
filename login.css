@@ -16,9 +16,15 @@ body {
     position: relative;
     width:60%;
     height: 100vh;
-    /* border: 2px solid red;  */
     top: 20%;
     margin-inline: auto;
+}
+.loginBottomIcon img{
+    margin-top: 20px;
+    margin-inline: auto;
+width:30px;
+height: 30px;
+background-color: #131414;
 }
 .loginImage{
     border-radius: 20px 0 0 20px;
