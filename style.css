@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
   
 }
 
@@ -17,12 +18,22 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+   padding: 0 100px;
     background: transparent;
     justify-content: space-between;
     display: flex;
     align-items: center;
     z-index: 100;
+    line-height: 80px;
+    
+}
+
+header .navbarLogo{
+    line-height: 80px;
+    display: flex;
+}
+.header img{
+    width: 150px;
 }
 
 .navbar a{
@@ -31,6 +42,7 @@ text-decoration: none;
 font-size: 18px;
 margin-left: 20px;
 position: relative;
+font-family: sans-serif;
 }
 
 .navbar a::before{
@@ -61,6 +73,7 @@ position: relative;
     grid-template-rows: repeat(5,20%);
     width: 100%;
     height: 100vh;
+
 }
 
 .imageDiv{
@@ -72,12 +85,23 @@ position: relative;
     grid-column: 4/6;
     grid-row: 3/4;
 }
+.textDiv h1{
+    color: #fff;
+     width: 340px;
+     margin-bottom: 20px;
+}
+.textDiv p{
+    color: #fff;
+    margin-bottom: 20px;
+    width: 400px;
+}
 
 .btn-ticket{
     width: 182px;
     height: 60px;
     margin-right: 15px;
-    font-size: 32px;
+    font-size: 18px;
+    font-weight: bold;
     border-radius: 30px;
     background-color: rgb(240, 19, 19);
     border: none;
@@ -93,7 +117,8 @@ position: relative;
     width: 182px;
     height: 60px;
     border-radius: 30px;
-    font-size: 32px;
+    font-size: 18px;
+    font-weight: bold;
     background: transparent;
     border: 2px solid white;
     color: white;
@@ -107,11 +132,12 @@ position: relative;
 
 .searchboxContainer{
     display: grid;
+    color: #fff;
     position: absolute;
     bottom: -12%;
     justify-content: space-between;    
     height: 300px;
-    grid-template-columns: repeat(5,200px);
+    grid-template-columns: repeat(5,250px);
     width: 100%;
     height: 100px;
     justify-content: center;
@@ -124,7 +150,7 @@ position: relative;
 
 .searchDiv{
     align-content: center;
-    border-radius: 5px 0 0 5px ;
+    border-radius: 10px 0 0 10px ;
     background-color: #242565 ;
     grid-column: 2/3;
     grid-row: 1/2;
@@ -194,7 +220,7 @@ position: relative;
     background-color: #242565 ;
     grid-column: 4/5;
     width: 100%;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 10px 10px 0;
 }
 
 searchboxSelect select{
@@ -206,29 +232,54 @@ searchboxSelect label{
 }
 
 .main2{
-    display: grid;
-    grid-template-columns: repeat(5,20%);
-    height: 300px;
-    width: 100%;
-    margin-top: 10px;
-    z-index: auto;
-    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+    margin-bottom: 3%;
 }
-
-#textEvent{
-    grid-column: 1/3;
-}
-
-.upComingEvent{
-    grid-column: 3/4;
-}
-
 .EventType{
-    grid-column: 4/5;
+    border: 2px solid #f2f4ff;
+     border-radius: 50px;
+     padding: 10px 10px;
+     width:150px;
+      background-color: #f2f4ff;
+     text-align: center;
+}
+#EventType-select{
+    border: none;
+     background-color: #f2f4ff;
+      font-weight: bold;
+}
+#eventCategory-select{
+    border: none;
+     background-color: #f2f4ff;
+      font-weight: bold;
+}
+#days-select{
+    border: 2px solid #f2f4ff;
+    border-radius: 50px;
+    padding: 10px 10px;width:150px; 
+    background-color: #f2f4ff;
+     text-align: center;
+     font-weight: bold;
+}
+.eventCategory{
+    border: 2px solid #f2f4ff;
+    border-radius: 50px;
+    padding: 10px 10px;
+    width:150px;
+     text-align: center;
+     /* border: none; */
+     background-color: #f2f4ff;
+    font-weight: bold;
+}
+#textEvent{
+    display: inline-block;
 }
 
-.searchboxSelect{
-    grid-column: 4/5;
+.main2-Input{
+    display: flex;
+    gap: 30px;
 }
 
 .main3{
@@ -335,11 +386,12 @@ grid-row: 2/3;
     justify-content: center;
     margin-top: 20px;
     width: 80px;
+    color: #3D37F1;
 }
 
 .loadmore{
     width: 100%;
-    height: 100px;
+    height: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -348,13 +400,13 @@ grid-row: 2/3;
     background: none;
     border: 2px solid #3D37F1;
     color: #3D37F1;
-    font-size: 36px;
+    font-size: 26px;
     border-radius: 50px;
     padding: 15px;
 }
 .joinBrands{
     width: 100%;
-    height: 100px;
+    height: 170px;
     background-color: #EEE1FF;
     display: flex;
     align-items: center;
@@ -581,4 +633,10 @@ height: 40px;
     padding-top: 3%;
     justify-content: center;
     color: #fff;
+}
+#A-link{
+    border: 2px solid #fff;
+     border-radius: 50px;
+     padding: 5px 20px;
+
 }
