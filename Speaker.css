@@ -11,14 +11,15 @@ body {
 
 .mainAbout {
     background-image: url("./img/Rect.png"), url("./img/Rectangle10.png");
-    background-blend-mode: soft-light;
+    background-blend-mode: multiply;
     background-position: center; 
     background-size: cover;
+
     background-repeat: no-repeat;
     position: relative;
     display: grid;
-    grid-template-columns: repeat(5, 20%);
-    grid-template-rows: repeat(5, 20%);
+    grid-template-columns: repeat(12, 20%);
+    grid-template-rows: repeat(12, 20%);
     width: 100%;
     height: 90vh;
     z-index: -1;
@@ -27,28 +28,26 @@ body {
 
 .mainAboutDiv1 {
     background-size: cover;
-
     width: 100%;
     height: 90vh;
     grid-column: 1/3;
+    grid-row: 2/4;
     align-items: center;
 }
 
 .mainAboutDiv2 {
-    position: absolute;
-    bottom: 0;
+    color: #fff;
     width: 100%;
     height: 90vh;
     grid-column: 4/6;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     align-items: center;
 }
 
 .mainAbout2{
     margin-inline: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: aquamarine;
     display: grid;

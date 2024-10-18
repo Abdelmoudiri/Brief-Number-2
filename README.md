@@ -8,13 +8,17 @@ L'objectif de ce projet est de construire une interface utilisateur responsive, 
 
 ## Fonctionnalités
 
+- **Page Home** : Affichage des intervenants et les et les even.
 - **Page Speakers** : Affichage des intervenants avec leur photo et description.
 - **Page About** : Informations sur la plateforme Eventify.
 - **Page Login** : Formulaire de connexion pour accéder à la plateforme.
-- **Navigation fluide** : Menu de navigation entre les pages.
-- **Responsive Design** : Utilisation de **media queries** pour assurer une bonne adaptation sur mobiles et tablettes.
+
 
 ## Structure du projet
 
 Le projet est composé des fichiers suivants :
+la page Home 
+la page Speakers
+La page About
 
+La page Login
